@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zentrixia Learning Hub — Learn Fast. Learn Smart.</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- AOS scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-z">Z</span>entrixia
+      </a>
+
+      <!-- hamburger for mobile -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#instructors">Instructors</a></li>
+        <li><a href="#join">Join Now</a></li>
+        <li>
+          <!-- dark mode toggle -->
+          <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-circles">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+    </div>
+
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+      <span class="hero-badge">🚀 New Batch Starting Soon</span>
+      <h1 class="hero-title">
+        Learn Fast.<br/>
+        <span class="accent-text">Learn Smart.</span>
+      </h1>
+      <p class="hero-sub">
+        Zentrixia Learning Hub offers 5–15 day micro-certification programs
+        in AI, Web Dev, UI/UX, Cloud and more. No fluff — just skills.
+      </p>
+      <div class="hero-btns">
+        <a href="#courses" class="btn btn-primary">Explore Courses</a>
+        <a href="#programs" class="btn btn-outline">View Programs</a>
+      </div>
+
+      <!-- quick stats -->
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>2400+</strong>
+          <span>Students</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>18+</strong>
+          <span>Courses</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>100%</strong>
+          <span>Certified</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
+      <div class="hero-card-mock">
+        <div class="mock-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="mock-body">
+          <div class="progress-row">
+            <span>AI Fundamentals</span>
+            <div class="pbar"><div class="pfill" style="width:82%"></div></div>
+            <small>82%</small>
+          </div>
+          <div class="progress-row">
+            <span>React Bootcamp</span>
+            <div class="pbar"><div class="pfill p2" style="width:65%"></div></div>
+            <small>65%</small>
+          </div>
+          <div class="progress-row">
+            <span>UI/UX Design</span>
+            <div class="pbar"><div class="pfill p3" style="width:91%"></div></div>
+            <small>91%</small>
+          </div>
+          <div class="mock-cert">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Certificate Ready!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT STRIP ========== -->
+  <section class="about-strip" data-aos="fade-up">
+    <div class="container">
+      <div class="strip-items">
+        <div class="strip-item">
+          <i class="fa-solid fa-bolt"></i>
+          <p>Speed Learning — 5 to 15 day programs</p>
+        </div>
+        <div class="strip-item">
+          <i class="fa-solid fa-certificate"></i>
+          <p>Verified micro-certifications</p>
+        </div>
+        <div class="strip-item">
+          <i class="fa-solid fa-laptop-code"></i>
+          <p>100% practical, project-based</p>
+        </div>
+        <div class="strip-item">
+          <i class="fa-solid fa-clock"></i>
+          <p>Mon–Fri, 10 AM – 9 PM IST</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COURSES ========== -->
+  <section class="courses-section section" id="courses">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="section-tag">What We Teach</span>
+        <h2>Our Courses</h2>
+        <p>Short, sharp, and career-ready. Pick what you need.</p>
+      </div>
+
+      <!-- filter buttons -->
+      <div class="filter-bar" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI & ML</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+      </div>
+
+      <div class="courses-grid" id="coursesGrid">
+
+        <!-- course card 1 -->
+        <div class="course-card" data-category="ai" data-aos="fade-up" data-aos-delay="0">
+          <div class="card-top ai-bg">
+            <i class="fa-solid fa-brain"></i>
+            <span class="level-badge beginner">Beginner</span>
+          </div>
+          <div class="card-body">
+            <h3>AI Fundamentals</h3>
+            <p>Understand core concepts of Artificial Intelligence and ML in just 7 days.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+              <span><i class="fa-solid fa-signal"></i> Beginner</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">₹999</span>
+              <a href="#join" class="enroll-btn">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- course card 2 -->
+        <div class="course-card" data-category="web" data-aos="fade-up" data-aos-delay="80">
+          <div class="card-top web-bg">
+            <i class="fa-brands fa-react"></i>
+            <span class="level-badge intermediate">Intermediate</span>
+          </div>
+          <div class="card-body">
+            <h3>React.js Bootcamp</h3>
+            <p>Build real-world web apps using React hooks, state management and APIs.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 10 Days</span>
+              <span><i class="fa-solid fa-signal"></i> Intermediate</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">₹1,299</span>
+              <a href="#join" class="enroll-btn">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- course card 3 -->
+        <div class="course-card" data-category="design" data-aos="fade-up" data-aos-delay="160">
+          <div class="card-top design-bg">
+            <i class="fa-solid fa-pen-nib"></i>
+            <span class="level-badge beginner">Beginner</span>
+          </div>
+          <div class="card-body">
+            <h3>UI/UX Design Sprint</h3>
+            <p>Learn Figma, wireframing, and user-centered design principles fast.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 5 Days</span>
+              <span><i class="fa-solid fa-signal"></i> Beginner</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">₹799</span>
+              <a href="#join" class="enroll-btn">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- course card 4 -->
+        <div class="course-card" data-category="cloud" data-aos="fade-up" data-aos-delay="0">
+          <div class="card-top cloud-bg">
+            <i class="fa-solid fa-cloud"></i>
+            <span class="level-badge intermediate">Intermediate</span>
+          </div>
+          <div class="card-body">
+            <h3>AWS Cloud Essentials</h3>
+            <p>Core AWS services, IAM, EC2, S3 — everything you need to get cloud-certified.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 12 Days</span>
+              <span><i class="fa-solid fa-signal"></i> Intermediate</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">₹1,499</span>
+              <a href="#join" class="enroll-btn">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- course card 5 -->
+        <div class="course-card" data-category="ai" data-aos="fade-up" data-aos-delay="80">
+          <div class="card-top ai-bg">
+            <i class="fa-solid fa-robot"></i>
+            <span class="level-badge advanced">Advanced</span>
+          </div>
+          <div class="card-body">
+            <h3>Generative AI & Prompt Engineering</h3>
+            <p>Master prompting techniques, LLMs, and AI tools for real productivity.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 8 Days</span>
+              <span><i class="fa-solid fa-signal"></i> Advanced</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">₹1,199</span>
+              <a href="#join" class="enroll-btn">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- course card 6 -->
+        <div class="course-card" data-category="web" data-aos="fade-up" data-aos-delay="160">
+          <div class="card-top web-bg">
+            <i class="fa-brands fa-node-js"></i>
+            <span class="level-badge intermediate">Intermediate</span>
+          </div>
+          <div class="card-body">
+            <h3>Full Stack with Node.js</h3>
+            <p>Build complete web apps with Express, MongoDB, REST APIs and more.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 15 Days</span>
+              <span><i class="fa-solid fa-signal"></i> Intermediate</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">₹1,699</span>
+              <a href="#join" class="enroll-btn">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end courses-grid -->
+    </div>
+  </section>
+
+  <!-- ========== PROGRAMS ========== -->
+  <section class="programs-section section" id="programs">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="section-tag">Signature Tracks</span>
+        <h2>Learning Programs</h2>
+        <p>Curated multi-course journeys designed for serious learners.</p>
+      </div>
+
+      <div class="programs-grid">
+
+        <div class="program-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="prog-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <div class="cert-badge">
+            <i class="fa-solid fa-award"></i> Certified Program
+          </div>
+          <h3>AI & Data Track</h3>
+          <p>
+            A structured 3-course track covering AI basics, Python for data, 
+            and hands-on ML projects. Perfect for anyone starting in tech.
+          </p>
+          <ul class="prog-list">
+            <li><i class="fa-solid fa-check"></i> AI Fundamentals (7 days)</li>
+            <li><i class="fa-solid fa-check"></i> Python for Data Science (10 days)</li>
+            <li><i class="fa-solid fa-check"></i> ML Mini Projects (8 days)</li>
+          </ul>
+          <div class="prog-footer">
+            <span class="prog-price">₹2,799 <small>/ track</small></span>
+            <a href="#join" class="btn btn-primary small">Enroll Track</a>
+          </div>
+        </div>
+
+        <div class="program-card featured-prog" data-aos="fade-up" data-aos-delay="100">
+          <div class="prog-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="cert-badge gold">
+            <i class="fa-solid fa-star"></i> Most Popular
+          </div>
+          <h3>Full Stack Web Program</h3>
+          <p>
+            Go from zero to job-ready in one power-packed program.
+            HTML to React, Node.js and deployment — all in under a month.
+          </p>
+          <ul class="prog-list">
+            <li><i class="fa-solid fa-check"></i> HTML/CSS Crash Course (5 days)</li>
+            <li><i class="fa-solid fa-check"></i> React.js Bootcamp (10 days)</li>
+            <li><i class="fa-solid fa-check"></i> Full Stack with Node.js (15 days)</li>
+          </ul>
+          <div class="prog-footer">
+            <span class="prog-price">₹3,499 <small>/ track</small></span>
+            <a href="#join" class="btn btn-primary small">Enroll Track</a>
+          </div>
+        </div>
+
+        <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="prog-icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <div class="cert-badge">
+            <i class="fa-solid fa-award"></i> Certified Program
+          </div>
+          <h3>Digital Design Program</h3>
+          <p>
+            Master the design process end-to-end — from wireframes to final
+            UI prototypes with Figma, and landing page execution.
+          </p>
+          <ul class="prog-list">
+            <li><i class="fa-solid fa-check"></i> UI/UX Design Sprint (5 days)</li>
+            <li><i class="fa-solid fa-check"></i> Figma Advanced (7 days)</li>
+            <li><i class="fa-solid fa-check"></i> Portfolio Project (5 days)</li>
+          </ul>
+          <div class="prog-footer">
+            <span class="prog-price">₹2,299 <small>/ track</small></span>
+            <a href="#join" class="btn btn-primary small">Enroll Track</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INSTRUCTORS ========== -->
+  <section class="instructors-section section" id="instructors">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="section-tag">Meet the Team</span>
+        <h2>Our Instructors</h2>
+        <p>Real practitioners. Real experience. Zero theory overload.</p>
+      </div>
+
+      <div class="instructors-grid">
+
+        <div class="instructor-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="instructor-avatar" style="background: linear-gradient(135deg,#6C63FF,#a78bfa)">
+            <span>AK</span>
+          </div>
+          <h3>Aryan Kapoor</h3>
+          <span class="inst-role">AI & Machine Learning</span>
+          <p>Ex-Google engineer with 6 years in ML and NLP. Has trained 900+ students through live bootcamps.</p>
+          <div class="inst-tags">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>LLMs</span>
+          </div>
+          <div class="inst-social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="instructor-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="instructor-avatar" style="background: linear-gradient(135deg,#00D4AA,#06b6d4)">
+            <span>SR</span>
+          </div>
+          <h3>Shreya Rao</h3>
+          <span class="inst-role">Full Stack Development</span>
+          <p>Senior dev at a funded startup. Specialises in React and Node ecosystems. Built 40+ live projects.</p>
+          <div class="inst-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="inst-social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="instructor-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="instructor-avatar" style="background: linear-gradient(135deg,#f59e0b,#ef4444)">
+            <span>NV</span>
+          </div>
+          <h3>Nikhil Verma</h3>
+          <span class="inst-role">UI/UX & Product Design</span>
+          <p>Product designer with 5+ years in SaaS companies. Award-winning portfolio in UI design and branding.</p>
+          <div class="inst-tags">
+            <span>Figma</span>
+            <span>Prototyping</span>
+            <span>Branding</span>
+          </div>
+          <div class="inst-social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== JOIN NOW FORM ========== -->
+  <section class="join-section section" id="join">
+    <div class="container">
+      <div class="join-wrapper" data-aos="fade-up">
+        <div class="join-left">
+          <span class="section-tag">Get Started Today</span>
+          <h2>Join Zentrixia</h2>
+          <p>
+            Fill in the form and our team will reach out with batch schedules,
+            fee breakdown, and everything you need to kick off.
+          </p>
+          <div class="join-perks">
+            <div class="perk"><i class="fa-solid fa-circle-check"></i> Free first-day trial</div>
+            <div class="perk"><i class="fa-solid fa-circle-check"></i> Flexible batch timings</div>
+            <div class="perk"><i class="fa-solid fa-circle-check"></i> Certificate on completion</div>
+            <div class="perk"><i class="fa-solid fa-circle-check"></i> Lifetime access to notes</div>
+          </div>
+          <p class="contact-info">
+            <i class="fa-solid fa-envelope"></i> hello@zentrixia.tech
+          </p>
+        </div>
+
+        <div class="join-right">
+          <form class="join-form" id="joinForm">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" placeholder="e.g. Rahul Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" />
+            </div>
+            <div class="form-group">
+              <label for="course">Course of Interest *</label>
+              <select id="course" required>
+                <option value="" disabled selected>-- Select a Course --</option>
+                <option>AI Fundamentals</option>
+                <option>React.js Bootcamp</option>
+                <option>UI/UX Design Sprint</option>
+                <option>AWS Cloud Essentials</option>
+                <option>Generative AI & Prompt Engineering</option>
+                <option>Full Stack with Node.js</option>
+                <option>AI & Data Track (Program)</option>
+                <option>Full Stack Web Program</option>
+                <option>Digital Design Program</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Anything else? (optional)</label>
+              <textarea id="message" rows="3" placeholder="Any questions, preferred batch time, etc."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <i class="fa-solid fa-paper-plane"></i> Submit Enrollment
+            </button>
+            <p class="form-note">We'll contact you within 24 hours. No spam, ever.</p>
+          </form>
+          <!-- success message (hidden by default) -->
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>You're In! 🎉</h3>
+            <p>We've received your enrollment. Expect an email from us within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-z">Z</span>entrixia
+          </a>
+          <p>Learn Fast. Learn Smart. Your next career upgrade starts here.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#instructors">Instructors</a></li>
+            <li><a href="#join">Join Now</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="#join">AI Fundamentals</a></li>
+            <li><a href="#join">React.js Bootcamp</a></li>
+            <li><a href="#join">UI/UX Sprint</a></li>
+            <li><a href="#join">AWS Essentials</a></li>
+            <li><a href="#join">Full Stack Node.js</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> hello@zentrixia.tech</li>
+            <li><i class="fa-solid fa-clock"></i> Mon–Fri, 10AM–9PM</li>
+          </ul>
+          <!-- newsletter -->
+          <div class="newsletter">
+            <p>Newsletter</p>
+            <div class="news-input">
+              <input type="email" placeholder="Your email" />
+              <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Zentrixia Learning Hub. All rights reserved. (Fictional brand for internship task)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scroll to top button -->
+  <button class="scroll-top" id="scrollTop" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- AOS init + custom JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
