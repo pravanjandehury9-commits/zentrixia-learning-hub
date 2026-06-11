@@ -90,8 +90,8 @@ This is a fictional brand created for an internship task. All content is mock/de
 ### Programs
 ![Programs](programs.png)
 
-### instructor
-![instructor](instructor .png)
+### Instructors
+![Instructors](instructor.png)
 
 ### Mobile View
-![Mobile](mobileview.png)
+![Mobile](mobile-view.png)
