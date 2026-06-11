@@ -78,3 +78,20 @@ Or deploy free to GitHub Pages:
 ---
 
 This is a fictional brand created for an internship task. All content is mock/demo only.
+
+## Screenshots
+
+### Home Page
+![Home](home.png)
+
+### Courses
+![Courses](courses.png)
+
+### Programs
+![Programs](programs.png)
+
+### Form
+![Form](form.png)
+
+### Mobile View
+![Mobile](mobile-view.png)
