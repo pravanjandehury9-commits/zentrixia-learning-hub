@@ -87,11 +87,11 @@ This is a fictional brand created for an internship task. All content is mock/de
 ### Courses
 ![Courses](courses.png)
 
-### mobileview
-![mobileviews](mobileview.png)
+### Programs
+![Programs](programs.png)
 
 ### Instructors
 ![Instructors](instructor.png)
 
-### Mobile View
-![Mobile](mobile-view.png)
+### MobileView
+![Mobileviews](mobileview.png)
