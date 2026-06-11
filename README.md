@@ -91,7 +91,7 @@ This is a fictional brand created for an internship task. All content is mock/de
 ![Programs](programs.png)
 
 ### instructor
-![instructor](instructor.png)
+![instructor](instructor .png)
 
 ### Mobile View
 ![Mobile](mobileview.png)
