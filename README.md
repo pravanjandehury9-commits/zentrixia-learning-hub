@@ -87,8 +87,8 @@ This is a fictional brand created for an internship task. All content is mock/de
 ### Courses
 ![Courses](courses.png)
 
-### Programs
-![Programs](programs.png)
+### mobileview
+![mobileviews](mobileview.png)
 
 ### Instructors
 ![Instructors](instructor.png)
