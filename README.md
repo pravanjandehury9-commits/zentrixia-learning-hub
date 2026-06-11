@@ -90,7 +90,7 @@ This is a fictional brand created for an internship task. All content is mock/de
 ### Programs
 ![Programs](programs.png)
 
-### Form
+### instructor
 ![instructor](instructor.png)
 
 ### Mobile View
